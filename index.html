@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Quizz</title>
+            <link rel="stylesheet" href="style.css">
+            <link href="https://fonts.googleapis.com/css2?family=Emblema+One&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@100&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Imprima&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            
+            <div class="container-quizz">
+                <h1>Quizz</h1>
+                <div class="quizz-header final">
+                    
+                    <span>Score: <span id="score">0</span></span>
+                    <span id="countdown">0</span>
+                </div>
+
+                                            <!-- Toutes les questions  -->
+                <div class="quizz-body">
+                    
+                    <div class="bloc-question active">
+                        <h4>En quelle année Netflix a-t-il été créé ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a1">
+                            <span>2015</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a1">
+                            <span>2001</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a1">
+                            <span>2009</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a1" valid="valid">
+                            <span>1997</span>
+                        </div>
+                    </div>
+
+                    <div class="bloc-question">
+                        <h4>Quel légume entre dans la composition du tzatziki ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a2">
+                            <span>La câpre</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a2">
+                            <span>Le cornichon</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a2" valid="valid">
+                            <span>Le concombre</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a2">
+                            <span>Le poivron</span>
+                        </div>
+                    </div>
+                
+
+                    <div class="bloc-question">
+                        <h4>Que signifie le mot kebab ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a3">
+                            <span>Turc</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a3" valid="valid">
+                            <span>Grillade</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a3">
+                            <span>Sandwich</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a3">
+                            <span>Agneau</span>
+                        </div>
+                    </div>
+            
+
+                    <div class="bloc-question">
+                        <h4>Qui prononce cette phrase dans le film Fight Club « Les choses que l’on possède finissent par nous posséder » ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a4" valid="valid">
+                            <span>Brad Pitt</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a4">
+                            <span>Jared Leto</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a4">
+                            <span>Edward Norton</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a4">
+                            <span>Meat Loaf</span>
+                        </div>
+                    </div>
+        
+
+                    <div class="bloc-question">
+                        <h4>Dans la série des X-Men, quel acteur incarne Wolverine ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a5">
+                            <span>Ben Affleck</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a5" valid="valid">
+                            <span>Hugh Jackman</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a5">
+                            <span>Matt Damon</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a5">
+                            <span>Matthew Fox</span>
+                        </div>
+                    </div>
+
+                    <div class="bloc-question">
+                        <h4>De quel film est tirée cette citation « Sanka, t’es mort ? Yeah man » ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a6">
+                            <span>Il faut sauver le soldat Ryan</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a6">
+                            <span>Trainspotting</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a6" valid="valid">
+                            <span>Rasta Rockett</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a6">
+                            <span>Les Indestructibles</span>
+                        </div>
+                    </div>
+
+                    <div class="bloc-question">
+                        <h4>Quel est le nom du Seigneur des Ténèbres dans le Seigneur des Anneaux ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a7" valid="valid">
+                            <span>Sauron</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a7">
+                            <span>Voldemort</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a7">
+                            <span>Saroumane</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a7">
+                            <span>Haldir</span>
+                        </div>
+                    </div>
+
+                    <div class="bloc-question">
+                        <h4>Quel est le prénom du jeune sorcier Londubat ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a8">
+                            <span>George</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a8">
+                            <span>Drago</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a8">
+                            <span>Dudley</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a8" valid="valid">
+                            <span>Neville</span>
+                        </div>
+                    </div>
+
+                    <div class="bloc-question">
+                        <h4>Quel est le poste d’Harry au Quidditch ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a9">
+                            <span>Poursuiveur</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a9">
+                            <span>Batteur</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a9">
+                            <span>Gardien</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a9" valid="valid">
+                            <span>Attrapeur</span>
+                        </div>
+                    </div>
+
+                    <div class="bloc-question">
+                        <h4>A quel groupe doit-on la chanson "In the Shadows" ?</h4>
+                        <div class="reponse">
+                            <input type="radio" name="a9">
+                            <span>Coldplay</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a9" valid="valid">
+                            <span>The Rasmus</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a9">
+                            <span>The Killers</span>
+                        </div>
+                        <div class="reponse">
+                            <input type="radio" name="a9">
+                            <span>Kasabian</span>
+                        </div>
+                    </div>
+
+                    <div class="bloc-question" style="text-align: center">
+                        <h4>Score final <span id="totalScore">0</span> sur 100</h4>
+                        <a href="start.html" class="btn1">Rejouer</a>
+                    </div>
+
+                </div>
+
+                <div class="quizz-footer">
+                    <span class="btn1" id="skip">Passer</span>
+                </div>
+
+            </div>
+
+
+            <script src="main.js"></script>
+        </body>
+    </html>

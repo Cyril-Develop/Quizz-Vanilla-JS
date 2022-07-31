@@ -1,0 +1,135 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    letter-spacing: 3px;
+    background:linear-gradient(to right bottom, wheat, rgb(216, 199, 169), rgba(0, 0, 0, 0.685));
+}
+
+.container-quizz{
+    width: 700px;
+    padding: 0 20px 20px;
+    min-height: 100px;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.39);
+    border-radius: 15px;
+}
+
+h1{
+    font-family: 'Emblema One', cursive;
+    font-size: 150px;
+    text-align: center;
+}
+
+.container-quizz p{
+    font-size: 40px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.quizz-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    margin: 0 -20px;
+    font-size: 20px;
+    font-family: 'Imprima', sans-serif; 
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.bloc-question{
+    display: none;
+}
+
+.bloc-question.active{
+    display: block;
+}
+
+.bloc-question h4{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.reponse{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.reponse input{
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.reponse span{
+    display: block;
+    padding: 8px 15px;
+    background-color: #bad0c9;
+    border-radius: 15px;
+    font-size: 30px;
+    transition: all 0.3 ease-out;
+}
+
+.reponse:hover span{
+    background-color: #9ab5ac;
+}
+
+.reponse input:checked + span{
+    background-color: #f93c3c;
+}
+
+.reponse input[valid]:checked + span{
+    background-color: green;
+    color: white;
+}
+
+.quizz-footer{
+    padding: 10px 0 0;
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn1{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+    background-color: #1d1f20;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    border-bottom: 5px solid #888282;
+    transition: 
+    background-color 0.3s ease-out,
+    transform 0.1s ease-in-out;
+}
+
+.btn1:hover{
+    color: black;
+    background-color: #bad0c9;
+}
+
+.btn1:active{
+    transform: translateY(3px);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.534);
+}
+
