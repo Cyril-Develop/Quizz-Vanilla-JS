@@ -1,4 +1,4 @@
-# Quizz.
+# Quizz Vanilla JS
 
 
 
