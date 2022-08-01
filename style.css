@@ -15,7 +15,8 @@ body{
 }
 
 .container-quizz{
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
     padding: 0 20px 20px;
     min-height: 100px;
     box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.39);
@@ -24,12 +25,12 @@ body{
 
 h1{
     font-family: 'Emblema One', cursive;
-    font-size: 150px;
+    font-size: clamp(50px, 7vw, 150px);
     text-align: center;
 }
 
 .container-quizz p{
-    font-size: 40px;
+    font-size: clamp(20px, 3vw, 40px);
     margin: 20px 0px;
     text-align: center;
 }
@@ -39,9 +40,8 @@ h1{
     justify-content: space-between;
     padding: 15px 20px;
     margin: 0 -20px;
-    font-size: 20px;
+    font-size: clamp(20px, 3vw, 40px);
     font-family: 'Imprima', sans-serif; 
-    font-size: 40px;
     font-weight: 900;
 }
 
@@ -55,8 +55,12 @@ h1{
 
 .bloc-question h4{
     text-align: center;
-    font-size: 30px;
+    font-size: clamp(18px, 3vw, 30px);
     margin-bottom: 30px;
+}
+
+.titre-final{
+    margin: 20px 0;
 }
 
 .reponse{
@@ -80,7 +84,7 @@ h1{
     padding: 8px 15px;
     background-color: #bad0c9;
     border-radius: 15px;
-    font-size: 30px;
+    font-size: clamp(20px, 3vw, 30px);
     transition: all 0.3 ease-out;
 }
 
@@ -110,7 +114,7 @@ a{
     display: inline-block;
     width: 130px;
     height: 50px;
-    font-size: 25px;
+    font-size: clamp(20px, 3vw, 25px);
     text-align: center;
     line-height: 45px;
     background-color: #1d1f20;
